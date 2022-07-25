@@ -34,3 +34,4 @@ Pouzil som `sqlite` kvoli jednoduchsiemu setupu, prepnutie na odporucany `postgr
 - Pridat viac fieldov do db, mozno locale z api k jednotlivym mestam a pod.
 - `app/Controllers/Http/AirPollutionController:17` lepsie by bolo pouzit `preload()`
 - Vyriesit error handling pre OpenWeather api
+- Stlpec `date_formatted` tam je len z jedneho dovodu, nedalo sami akosi filtrovat podla `date` fieldu cez Lucid ORM tak som spravil alternativny field ktory je integer. Inak by stacil cisto `date` field
