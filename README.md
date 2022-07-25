@@ -30,8 +30,8 @@ Pouzil som `sqlite` kvoli jednoduchsiemu setupu, prepnutie na odporucany `postgr
 
 ## Mozne vylepsenia do buducna
 
+- Stlpec `date_formatted` v `pollution` tam je len z jedneho dovodu, nedalo sami akosi rozbehat `updateOrCreate()` s podmienkov vo fielde `date`, tak som spravil alternativny field ktory je integer. Inak by stacil cisto `date` field
 - Detailensji error output pri validaci entry argument pri ace commandoch
 - Pridat viac fieldov do db, mozno locale z api k jednotlivym mestam a pod.
 - `app/Controllers/Http/AirPollutionController:17` lepsie by bolo pouzit `preload()`
 - Vyriesit error handling pre OpenWeather api
-- Stlpec `date_formatted` tam je len z jedneho dovodu, nedalo sami akosi filtrovat podla `date` fieldu cez Lucid ORM tak som spravil alternativny field ktory je integer. Inak by stacil cisto `date` field
