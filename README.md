@@ -36,4 +36,5 @@ Pouzil som `sqlite` kvoli jednoduchsiemu setupu, prepnutie na odporucany `postgr
 - Vyriesit error handling pre OpenWeather api
 - Vytvorit axios instanciu pre OpenWeather service
 - Presunut logiku z controllera a commandov do samostatneho servicu
+- Pri `commands/PollutionSync.ts:67` pouzit radcej `updateOrCreateMany` namiesto `updateOrCreate` kvoli optimalizaci
 - Stlpec `date_formatted` v `pollution` tam je len z jedneho dovodu, nedalo sami akosi rozbehat `updateOrCreate()` s podmienkov vo fielde `date`, tak som spravil alternativny field ktory je integer. Inak by stacil cisto `date` field
